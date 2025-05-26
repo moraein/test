@@ -3,7 +3,7 @@ name: Daily Telegram Reminder
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * *'  # UTC 6:00 = 8:00 Berlin (summer time)
+    - cron: '30 5 * * *'  # UTC 6:00 = 8:00 Berlin (summer time)
 jobs:
   send-telegram:
     runs-on: ubuntu-latest
